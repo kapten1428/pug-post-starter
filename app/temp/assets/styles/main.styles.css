@@ -456,12 +456,19 @@ template {
 	font-family: 'Roboto', sans-serif;
 }
 
+ul{
+	margin: 0;
+	padding:0;
+}
+
+li{
+	list-style: none;
+}
+
 .page-section{
-	position: absolute;
-	background-color: #1CBB9F;
 	width: 100%;
-	height: 100%;
-	
+	height:100vh;
+	padding: 4rem 0;
 }
 
 .primary-nav{
@@ -635,7 +642,7 @@ template {
 @media (min-width : 1024px) {
 
 .wrapper{
-		padding: 0 ;
+		padding: 0 1rem ;
 		max-width: 1154px;
 		margin-left: auto;
 		margin-right: auto
@@ -643,7 +650,7 @@ template {
 }
 	}
 
-@media only screen and (min-device-width : 968px) {
+@media only screen and (min-device-width :800x) {
 
 .wrapper{
 		padding: 0 1rem
@@ -684,6 +691,7 @@ template {
 	
 	
 }
+
 		.btn__get-started{
 			margin-right: .5rem;
 		}
@@ -692,3 +700,118 @@ template {
 .search{
 	
 }
+
+.products{
+	text-align: center;
+}
+
+.products__title{
+		color: #1CBB9F;
+		margin-bottom: 2rem;
+		font-size: 2rem;
+	}
+
+.products__subtitle{
+		font-weight: 300;
+		color: rgba(168,168,168,1);
+		margin-bottom: 3rem;
+	}
+
+.products__list{
+		position: relative;
+
+
+		
+
+	}
+
+.products__list__item{
+			height : 350px;
+			background-color: rgba(234, 234, 244, 1);
+
+			
+
+		}
+
+@media (min-width: 900px){
+
+.products__list__item{
+				display: inline-block;
+				width: 23%;
+				margin-left: .7rem
+
+			
+
+		}
+
+				.products__list__item :nth-child(n){
+					margin-right: 6px;
+				}
+			}
+
+@media (max-width: 1200px){
+
+.products__list__item{
+				width:20%
+
+			
+
+		}
+			}
+
+@media (max-width: 988px){
+
+.products__list__item{
+				width:40%
+
+			
+
+		}
+
+				.products__list__item:nth-child(2n){
+					margin-top: 1rem;
+				}
+			}
+
+@media (max-width: 887px){
+
+.products__list__item{
+				width : 40%;
+				display: inline-block
+
+			
+
+		}
+
+				.products__list__item:nth-child(2n){
+					margin-left: 1rem;
+					margin-top: 1rem;
+				}
+			}
+
+@media (min-width: 888px){
+
+.products__list__item{
+				display : inline-block;
+				margin : .5rem .5rem
+
+			
+
+		}
+
+			}
+
+@media (max-width: 548px){
+
+.products__list__item{
+				width : 90%
+
+			
+
+		}
+
+				.products__list__item:nth-child(n){
+					margin-left: 0;
+					margin-top: 1rem;
+				}
+			}

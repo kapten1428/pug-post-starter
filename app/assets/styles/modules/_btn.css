@@ -14,8 +14,11 @@
 	&__learn-more{
 		@mixin mainHover
 	}
+
+
 	@mixin atLarge{
 		margin-top: 1.78rem;
+
 		&__get-started{
 			margin-right: .5rem;
 		}

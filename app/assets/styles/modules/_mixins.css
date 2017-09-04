@@ -7,16 +7,17 @@
 }
 
 @define-mixin atSmall{
-	@media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
+	@media only screen and (min-device-width : 320px){
 		@mixin-content: 
 	}
 }
 
 @define-mixin atMedium{
-	@media only screen and (min-device-width : 968px) {
+	@media only screen and (min-device-width :800x) {
 		@mixin-content;
 	}
 }
+
 @define-mixin atLarge{
 	@media (min-width : 1024px) {
 		@mixin-content;
@@ -30,3 +31,5 @@
 		cursor: pointer;
 	}
 }
+
+
