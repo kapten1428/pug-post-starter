@@ -1,0 +1,108 @@
+.header{
+	background-color: $mainGreen;
+	width: 100%;
+	height: 100vh;
+
+	&__container{
+		padding-top: 2.2rem;
+		@mixin atLarge{
+			padding-top: 7rem;
+		}
+	}
+
+	&__logo{
+		float: none;
+		text-align: center;
+		padding-top: 1rem;
+		a{
+			text-decoration: none;
+			font-weight: 300;
+			color: #fff;
+			font-size: 1.3rem;
+			letter-spacing: .8rem;
+		}
+
+		@mixin atLarge{
+			&--pull-left{
+				float: left;
+			}
+			padding-top: 0;
+		}
+	}
+
+	&__menu{
+		&--pull-right{
+			float: right;
+		}
+	}
+
+	&__line{
+		border-bottom : 1px solid #fff;
+		padding-top: 1.5rem;
+
+		@mixin atLarge{
+			padding-top: 3.4rem;
+		}
+	}
+	
+	
+
+	&__search{
+		border: 1px solid rgba(255,255,255,.6);
+		border-radius: 20px;
+		
+		padding: 6px 2.25rem 6px .75rem;
+		margin-top: 1rem;
+		color:#fff;
+
+		input::placeholder {
+			color: #fff;
+		}
+
+		input[type="search"]{
+			background: transparent;
+			border: none;
+			padding : .2rem;
+			color: #fff;
+			outline: none;
+		}
+		
+		@mixin atLarge{
+			float: right;
+		}
+
+	}
+
+	&__content{
+		position: relative;
+		text-align: center;
+		top : 4rem;
+
+		&__title{
+			font-size: 3rem;
+			color: #fff;
+			font-weight: bolder;
+		}
+
+		&__caption{
+			font-weight: 300;
+			color: #fff;
+			margin-top: .2rem;
+			font-size: .8rem;
+
+			@mixin atLarge{
+				letter-spacing: .2rem;
+				font-size: 1rem;
+			}
+		}
+
+		@mixin atLarge{
+			top: 8rem;
+			text-align: left;
+
+		}
+	}
+
+	
+
+}

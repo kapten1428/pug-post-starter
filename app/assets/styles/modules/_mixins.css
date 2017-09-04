@@ -1,0 +1,32 @@
+@define-mixin clearfix{
+	&::after{
+		content:" ";
+		clear: "both";
+		display: block;
+	}
+}
+
+@define-mixin atSmall{
+	@media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
+		@mixin-content: 
+	}
+}
+
+@define-mixin atMedium{
+	@media only screen and (min-device-width : 968px) {
+		@mixin-content;
+	}
+}
+@define-mixin atLarge{
+	@media (min-width : 1024px) {
+		@mixin-content;
+	}
+}
+
+@define-mixin mainHover{
+	&:hover{
+		background:#fff;
+		color: #333333;
+		cursor: pointer;
+	}
+}

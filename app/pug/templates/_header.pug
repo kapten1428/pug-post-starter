@@ -1,0 +1,33 @@
+include _mixins
+
+block header
+	header#header
+		.header
+			.header__container 
+				.wrapper
+					.header__logo.header__logo--pull-left
+						a(href="#") KAPTEN1428
+					.header__menu.header__menu--pull-right
+						nav.primary-nav
+							ul
+								+navLink('#','Home')
+								+navLink('#','Products')
+								+navLink('#','Services')
+								+navLink('#','About')
+								+navLink('#','Contacts')
+					.header__line
+					.header__search
+						input(class="search_content" type="search" placeholder="Search") 
+					.header__content
+						.header__content__title Starter Kits
+						.header__content__caption Make your beautiful template with love
+						button.btn.btn__get-started Get Started
+						button.btn.btn__learn-more Learn More
+
+
+
+
+
+
+
+

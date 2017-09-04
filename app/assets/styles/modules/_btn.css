@@ -1,0 +1,25 @@
+.btn{
+	width: 11.856rem;
+	padding : .55rem 1.2rem;
+	background: transparent;
+	border: 1px solid #fff;
+	margin-top: .5rem;
+	color: #fff; 
+
+	&__get-started{
+		margin-top: 2rem;
+		@mixin mainHover
+	}
+
+	&__learn-more{
+		@mixin mainHover
+	}
+	@mixin atLarge{
+		margin-top: 1.78rem;
+		&__get-started{
+			margin-right: .5rem;
+		}
+	}
+	
+	
+}
